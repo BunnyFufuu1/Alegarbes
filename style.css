@@ -1,0 +1,120 @@
+/* Resetting margins and applying overall styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center; /* Horizontally center the container */
+    align-items: flex-start; /* Align to the top for better readability */
+    min-height: 100vh;
+}
+
+/* Main container styling */
+.container {
+    max-width: 800px;
+    margin: 40px 0; /* Add vertical margin for spacing */
+    padding: 25px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+/* Heading styling */
+h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #2a2a2a;
+    text-align: center; /* Center-align main heading */
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #555;
+    text-align: left; /* Left-align secondary headings for balance */
+}
+
+h3 {
+    font-size: 18px;
+    margin-top: 30px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    color: #333;
+    text-align: left; /* Left-align tertiary headings */
+}
+
+/* Accent underline for section headings */
+h3::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #2a2a2a;
+    margin-top: 5px;
+    margin-left: 0; /* Align underline to the left */
+}
+
+/* Paragraph and text styling */
+p {
+    margin-bottom: 15px;
+    text-align: left; /* Ensure left alignment for readability */
+}
+
+p strong {
+    font-size: 16px;
+    color: #2a2a2a;
+}
+
+/* Styling for unordered lists (Skills section) */
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Contact info styling */
+p.contact-info {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.4;
+    text-align: left;
+}
+
+/* Container for dividing sections with padding */
+.section {
+    margin-bottom: 20px;
+}
+
+/* Adding hover effects for interactivity (optional) */
+h1:hover, h2:hover, h3:hover {
+    color: #1a1a1a;
+    cursor: default;
+}
+
+/* Styling to add rounded corner box for specific sections */
+.round-box {
+    padding: 15px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Minor transitions for hover interactions */
+h3 {
+    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+h3:hover {
+    color: #1a1a1a;
+    border-color: #666;
+}
